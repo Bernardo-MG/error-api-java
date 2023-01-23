@@ -12,7 +12,7 @@ Before beginning with the new project there are a few things which should be edi
 
 Note that the Maven site is using the [Docs Maven Skin](https://github.com/Bernardo-MG/docs-maven-skin), which will have a few configuration requirements of its own.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.bernardomg/validation-api-java.svg)][maven-repo]
+[![Maven Central](https://img.shields.io/maven-central/v/com.bernardomg/error-api-java.svg)][maven-repo]
 
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
 [![Development docs](https://img.shields.io/badge/docs-develop-blue.svg)][site-develop]
@@ -87,11 +87,11 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under the [MIT License][license].
 
-[maven-repo]: https://mvnrepository.com/artifact/com.bernardomg/validation-api-java
-[issues]: https://github.com/bernardo-mg/validation-api-java/issues
-[javadoc-develop]: https://docs.bernardomg.com/maven/validation-api-java/validation-api-java/apidocs
-[javadoc-release]: https://docs.bernardomg.com/development/maven/validation-api-java/validation-api-java/apidocs
+[maven-repo]: https://mvnrepository.com/artifact/com.bernardomg/error-api-java
+[issues]: https://github.com/bernardo-mg/error-api-java/issues
+[javadoc-develop]: https://docs.bernardomg.com/maven/error-api-java/error-api-java/apidocs
+[javadoc-release]: https://docs.bernardomg.com/development/maven/error-api-java/error-api-java/apidocs
 [license]: https://www.opensource.org/licenses/mit-license.php
-[scm]: https://github.com/bernardo-mg/validation-api-java
-[site-develop]: https://docs.bernardomg.com/maven/validation-api-java/validation-api-java
-[site-release]: https://docs.bernardomg.com/development/maven/validation-api-java/validation-api-java
+[scm]: https://github.com/bernardo-mg/error-api-java
+[site-develop]: https://docs.bernardomg.com/maven/error-api-java/error-api-java
+[site-release]: https://docs.bernardomg.com/development/maven/error-api-java/error-api-java
