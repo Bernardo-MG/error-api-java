@@ -22,32 +22,36 @@
  * SOFTWARE.
  */
 
-package com.bernardomg.api.validation.failure.exception;
+package com.bernardomg.api.validation.failure;
 
-import java.util.Arrays;
-import java.util.Collection;
+import lombok.Data;
+import lombok.NonNull;
 
-import com.bernardomg.api.validation.failure.FieldFailure;
+/**
+ * Immutable implementation of {@code FieldValidationError}.
+ *
+ * @author Bernardo Mart&iacute;nez Garrido
+ *
+ */
+@Data
+public final class ImmutablePropertyFailure implements PropertyFailure {
 
-import lombok.Getter;
+    private final String code;
 
-@Getter
-public class FieldFailureException extends RuntimeException {
+    private final String field;
 
-    private static final long              serialVersionUID = 5252694690217611607L;
+    private final String message;
 
-    private final Collection<FieldFailure> failures;
+    private final Object value;
 
-    public FieldFailureException(final Collection<FieldFailure> fails) {
+    public ImmutablePropertyFailure(@NonNull final String msg, @NonNull final String fld, @NonNull final String cd,
+            final Object val) {
         super();
 
-        failures = fails;
-    }
-
-    public FieldFailureException(final FieldFailure err) {
-        super(err.getMessage());
-
-        failures = Arrays.asList(err);
+        message = msg;
+        field = fld;
+        code = cd;
+        value = val;
     }
 
 }
