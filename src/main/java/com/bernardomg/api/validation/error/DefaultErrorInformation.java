@@ -4,7 +4,7 @@ package com.bernardomg.api.validation.error;
 import lombok.Data;
 
 @Data
-public class DefaultErrorDetails implements ErrorDetails {
+public class DefaultErrorInformation implements ErrorInformation {
 
     private String context;
 

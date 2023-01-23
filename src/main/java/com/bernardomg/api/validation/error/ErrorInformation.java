@@ -29,7 +29,7 @@ package com.bernardomg.api.validation.error;
  *
  * @author Bernardo Mart&iacute;nez Garrido
  */
-public interface ErrorDetails {
+public interface ErrorInformation {
 
     public String getContext();
 
