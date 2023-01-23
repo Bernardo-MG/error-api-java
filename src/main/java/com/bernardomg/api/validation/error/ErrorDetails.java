@@ -1,7 +1,7 @@
 /**
  * The MIT License (MIT)
  * <p>
- * Copyright (c) 2022 the original author or authors.
+ * Copyright (c) 2023 the original author or authors.
  * <p>
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,14 +22,23 @@
  * SOFTWARE.
  */
 
-package com.bernardomg.api.validation.validator;
+package com.bernardomg.api.validation.error;
 
-import java.util.Optional;
+/**
+ * Error response to the frontend.
+ *
+ * @author Bernardo Mart&iacute;nez Garrido
+ */
+public interface ErrorDetails {
 
-import com.bernardomg.api.validation.failure.Failure;
+    public String getContext();
 
-public interface ValidationRule<T> {
+    public String getDetails();
 
-    public Optional<Failure> test(final T value);
+    public String getInstance();
+
+    public String getTitle();
+
+    public String getType();
 
 }
